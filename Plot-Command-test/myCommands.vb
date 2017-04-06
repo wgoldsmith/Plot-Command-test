@@ -36,9 +36,13 @@ Namespace Plot_Command_test
         ' * click the 'Show All Files' button in the Solution Explorer;
         ' * expand the tree node for myCommands.vb;
         ' * and double click on myCommands.resx
-        <CommandMethod("MyGroup", "MyCommand", "MyCommandLocal", CommandFlags.Modal)> _
+        <CommandMethod("TestPlot", CommandFlags.Modal)>
         Public Sub MyCommand() ' This method can have any name
             ' Put your command code here
+            Dim pForm As PlotForm
+            pForm = New PlotForm()
+            pForm.Show()
+            pForm = Nothing
         End Sub
 
         ' Modal Command with pickfirst selection

@@ -23,6 +23,10 @@ Partial Class PlotForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.PaperStatusGroupBox = New System.Windows.Forms.GroupBox()
+        Me.Color1536Panel = New System.Windows.Forms.FlowLayoutPanel()
+        Me.Color1534Panel = New System.Windows.Forms.FlowLayoutPanel()
+        Me.Color7224Panel = New System.Windows.Forms.FlowLayoutPanel()
+        Me.Color7234Panel = New System.Windows.Forms.FlowLayoutPanel()
         Me.Changer7224Label = New System.Windows.Forms.Label()
         Me.LastChange7224Label = New System.Windows.Forms.Label()
         Me.T7224Label = New System.Windows.Forms.Label()
@@ -47,10 +51,6 @@ Partial Class PlotForm
         Me.Mylar1536RadioButton = New System.Windows.Forms.RadioButton()
         Me.Paper1536RadioButton = New System.Windows.Forms.RadioButton()
         Me.Other1536RadioButton = New System.Windows.Forms.RadioButton()
-        Me.Color7234Panel = New System.Windows.Forms.FlowLayoutPanel()
-        Me.Color7224Panel = New System.Windows.Forms.FlowLayoutPanel()
-        Me.Color1534Panel = New System.Windows.Forms.FlowLayoutPanel()
-        Me.Color1536Panel = New System.Windows.Forms.FlowLayoutPanel()
         Me.OkButton = New System.Windows.Forms.Button()
         Me.CancelButton = New System.Windows.Forms.Button()
         Me.PaperStatusGroupBox.SuspendLayout()
@@ -92,6 +92,42 @@ Partial Class PlotForm
         Me.PaperStatusGroupBox.TabIndex = 1
         Me.PaperStatusGroupBox.TabStop = False
         Me.PaperStatusGroupBox.Text = "Paper Status"
+        '
+        'Color1536Panel
+        '
+        Me.Color1536Panel.BackColor = System.Drawing.Color.White
+        Me.Color1536Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Color1536Panel.Location = New System.Drawing.Point(5, 15)
+        Me.Color1536Panel.Name = "Color1536Panel"
+        Me.Color1536Panel.Size = New System.Drawing.Size(35, 25)
+        Me.Color1536Panel.TabIndex = 25
+        '
+        'Color1534Panel
+        '
+        Me.Color1534Panel.BackColor = System.Drawing.Color.White
+        Me.Color1534Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Color1534Panel.Location = New System.Drawing.Point(5, 56)
+        Me.Color1534Panel.Name = "Color1534Panel"
+        Me.Color1534Panel.Size = New System.Drawing.Size(35, 25)
+        Me.Color1534Panel.TabIndex = 25
+        '
+        'Color7224Panel
+        '
+        Me.Color7224Panel.BackColor = System.Drawing.Color.White
+        Me.Color7224Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Color7224Panel.Location = New System.Drawing.Point(5, 138)
+        Me.Color7224Panel.Name = "Color7224Panel"
+        Me.Color7224Panel.Size = New System.Drawing.Size(35, 25)
+        Me.Color7224Panel.TabIndex = 25
+        '
+        'Color7234Panel
+        '
+        Me.Color7234Panel.BackColor = System.Drawing.Color.White
+        Me.Color7234Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Color7234Panel.Location = New System.Drawing.Point(5, 97)
+        Me.Color7234Panel.Name = "Color7234Panel"
+        Me.Color7234Panel.Size = New System.Drawing.Size(35, 25)
+        Me.Color7234Panel.TabIndex = 24
         '
         'Changer7224Label
         '
@@ -334,42 +370,6 @@ Partial Class PlotForm
         Me.Other1536RadioButton.Text = "Other"
         Me.Other1536RadioButton.UseVisualStyleBackColor = True
         '
-        'Color7234Panel
-        '
-        Me.Color7234Panel.BackColor = System.Drawing.Color.White
-        Me.Color7234Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Color7234Panel.Location = New System.Drawing.Point(5, 97)
-        Me.Color7234Panel.Name = "Color7234Panel"
-        Me.Color7234Panel.Size = New System.Drawing.Size(35, 25)
-        Me.Color7234Panel.TabIndex = 24
-        '
-        'Color7224Panel
-        '
-        Me.Color7224Panel.BackColor = System.Drawing.Color.White
-        Me.Color7224Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Color7224Panel.Location = New System.Drawing.Point(5, 138)
-        Me.Color7224Panel.Name = "Color7224Panel"
-        Me.Color7224Panel.Size = New System.Drawing.Size(35, 25)
-        Me.Color7224Panel.TabIndex = 25
-        '
-        'Color1534Panel
-        '
-        Me.Color1534Panel.BackColor = System.Drawing.Color.White
-        Me.Color1534Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Color1534Panel.Location = New System.Drawing.Point(5, 56)
-        Me.Color1534Panel.Name = "Color1534Panel"
-        Me.Color1534Panel.Size = New System.Drawing.Size(35, 25)
-        Me.Color1534Panel.TabIndex = 25
-        '
-        'Color1536Panel
-        '
-        Me.Color1536Panel.BackColor = System.Drawing.Color.White
-        Me.Color1536Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Color1536Panel.Location = New System.Drawing.Point(5, 15)
-        Me.Color1536Panel.Name = "Color1536Panel"
-        Me.Color1536Panel.Size = New System.Drawing.Size(35, 25)
-        Me.Color1536Panel.TabIndex = 25
-        '
         'OkButton
         '
         Me.OkButton.Location = New System.Drawing.Point(90, 217)
@@ -398,6 +398,7 @@ Partial Class PlotForm
         Me.Controls.Add(Me.OkButton)
         Me.Controls.Add(Me.PaperStatusGroupBox)
         Me.Name = "PlotForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Plot"
         Me.PaperStatusGroupBox.ResumeLayout(False)
         Me.PaperStatusGroupBox.PerformLayout()
